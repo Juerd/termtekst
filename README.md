@@ -41,6 +41,7 @@ left  / h / [ : prev
 right / l / ] : next
 up    / j / , : prev sub page
 down  / k / . : next sub page
+home / ctrl+A : to page 100
 [0-9]         : enter page number
 q             : quit
 d             : toggle double width

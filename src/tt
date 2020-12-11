@@ -239,6 +239,8 @@ def main(scr):
             page_next = p.get('prevPage')
         if c == curses.KEY_RIGHT or c == ord('l') or c == ord(']'):
             page_next = p.get('nextPage')
+        if c == curses.KEY_HOME or c == 1:  # 1 is ctrl+A
+            page_next = '100'
         if c >= ord('0') and c <= ord('9'):
             page_user = page_user + chr(c)
             if len(page_user) == 3:
