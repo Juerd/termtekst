@@ -37,14 +37,14 @@ on page numbers with the mouse.
 ### Key mappings
 
 ````
-left  / h / [ : prev
-right / l / ] : next
-up    / j / , : prev sub page
-down  / k / . : next sub page
-home / ctrl+A : to page 100
-[0-9]         : enter page number
-q             : quit
-d             : toggle double width
+left  / h / [        : prev
+right / l / ]        : next
+up    / j / , / pgdn : prev sub page
+down  / k / . / pgup : next sub page
+home / ctrl+A        : to page 100
+[0-9]                : enter page number
+q                    : quit
+d                    : toggle double width
 ````
 
 ### Configuration

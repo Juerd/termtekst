@@ -231,9 +231,9 @@ def main(scr):
             double_width = not double_width
         if c > 0 and c < 255 and chr(c) in bookmarks:
             page_next = bookmarks[chr(c)]
-        if c == curses.KEY_DOWN or c == ord('j') or c == ord(','):
+        if c == curses.KEY_DOWN or c == curses.KEY_PPAGE or c == ord('j') or c == ord(','):
             page_next = p.get('prevSubPage')
-        if c == curses.KEY_UP or c == ord('k') or c == ord('.'):
+        if c == curses.KEY_UP or c == curses.KEY_NPAGE or c == ord('k') or c == ord('.'):
             page_next = p.get('nextSubPage')
         if c == curses.KEY_LEFT or c == ord('h') or c == ord('['):
             page_next = p.get('prevPage')
